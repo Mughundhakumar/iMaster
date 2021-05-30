@@ -1,0 +1,43 @@
+<section id="loginPage" fxLayout="column">
+    <span fxFlexOffset="5"></span>
+    <div class="img-background" fxLayout fxLayoutAlign="center">
+        <img fxFlex="32" src="assets/images/logo.png">
+    </div>
+    <form [formGroup]="loginFormGroup" fxLayout="column">
+        <div fxLayoutAlign="center">
+            <mat-form-field appearance="outline" fxFlex="30">
+                <input class="font-style" formControlName="userName" type="text" matInput
+                    placeholder="Enter your Username" name="userName" required>
+
+                <mat-error class="font-style">Username must not be empty</mat-error>
+                <!-- <mat-hint align="end"> {{unInput.value?.length}}</mat-hint> -->
+            </mat-form-field>
+        </div>
+        <div fxLayoutAlign="center" class="form-field-space">
+            <mat-form-field appearance="outline" fxFlex="30">
+                <input class="font-style" formControlName="password" [type]="loginPasswordHide ? 'text' : 'password'"
+                    matInput placeholder="Enter your Password" name="password" required>
+                <mat-icon style="cursor: pointer;" matSuffix (click)="loginPasswordHide = !loginPasswordHide">
+                    {{loginPasswordHide ? 'visibility' :
+                    'visibility_off'}}</mat-icon>
+                <mat-error class="font-style">Password must not be empty</mat-error>
+                <!-- <mat-error class="font-style" *ngIf="loginFormGroup.hasError('minlength')">Password length should be -->
+                <!-- minimum 6 -->
+                <!-- characters</mat-error> -->
+                <!-- <mat-hint align="end"> {{pwdInput.value?.length}}</mat-hint> -->
+            </mat-form-field>
+        </div>
+        <div fxLayoutAlign="center" class="btn-space">
+            <button class="nxt-button-style font-style" (click)="onSubmit()" type="submit" mat-raised-button
+                color="primary">
+                <!-- <mat-progress-bar *ngIf="isLoading" mode="indeterminate">
+                </mat-progress-bar> -->
+                <label class="login-btn-label">Login</label>
+            </button>
+        </div>
+    </form>
+    <div fxLayoutAlign="center" class="signup-space" *ngIf="!isLoading">
+        Create an account by clicking on <a routerLink="/signup"><span class="label">Signup</span></a>
+    </div>
+    <span fxFlexOffset="5"></span>
+</section>

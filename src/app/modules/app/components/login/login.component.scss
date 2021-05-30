@@ -1,0 +1,99 @@
+ #loginPage {
+     vertical-align: center;
+
+     ::ng-deep .mat-form-field-wrapper {
+         padding-bottom: 0px;
+
+         &:hover {
+             outline: none;
+             ;
+         }
+     }
+
+     ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+         padding: 4px 0px 10px 0px;
+     }
+
+     ::ng-deep .mat-form-field-subscript-wrapper {
+         top: inherit;
+     }
+
+     .loading-spinner {
+         text-align: center;
+
+         ::ng-deep .mat-progress-spinner circle,
+         .mat-spinner circle {
+             stroke: #005e7f;
+         }
+     }
+
+     .img-background {
+         background-color: white;
+         margin-bottom: 40px;
+     }
+
+     .btn-space {
+         margin-top: 3%;
+
+         .nxt-button-style {
+             justify-content: center;
+             width: fit-content;
+             border-radius: 500px;
+             cursor: pointer;
+             color: #3483eb;
+             padding: 0px 40px 4px 40px;
+             background: white;
+             box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 6px 2px rgba(0, 0, 0, 0.09);
+
+             .login-btn-label {
+                 color: #3483eb;
+                 font-size: 18px;
+                 font-family: Lato;
+                 font-weight: 500;
+                 cursor: pointer;
+
+             }
+         }
+
+         .nxt-button-style:hover {
+             background-color: #e8f0fe;
+             cursor: pointer;
+         }
+
+         .font-style {
+             font-family: 'Lato';
+             font-size: 16px;
+         }
+     }
+
+     .form-field-space {
+         margin-top: 2%;
+     }
+
+     .label {
+         display: inline-block;
+         margin-left: 10px;
+         font-weight: bold;
+     }
+
+     .signup-space {
+         margin-top: 2%;
+         font-family: Lato;
+     }
+ }
+
+ ::ng-deep .mat-progress-bar-fill::after {
+     background-color: #005e7f;
+ }
+
+ ::ng-deep .mat-progress-bar-buffer {
+     background: transparent;
+ }
+
+ ::ng-deep .mat-progress-bar {
+     border-radius: 2px;
+ }
+
+ ::ng-deep .mat-progress-bar-background {
+     fill: none;
+ }
