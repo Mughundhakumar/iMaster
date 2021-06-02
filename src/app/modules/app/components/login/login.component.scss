@@ -27,73 +27,38 @@
          }
      }
 
-     .img-background {
+     .logo {
+         margin: 20px 0px 40px 0px;
          background-color: white;
-         margin-bottom: 40px;
      }
 
-     .btn-space {
-         margin-top: 3%;
-
-         .nxt-button-style {
-             justify-content: center;
-             width: fit-content;
-             border-radius: 500px;
-             cursor: pointer;
-             color: #3483eb;
-             padding: 0px 40px 4px 40px;
-             background: white;
-             box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 6px 2px rgba(0, 0, 0, 0.09);
-
-             .login-btn-label {
-                 color: #3483eb;
-                 font-size: 18px;
-                 font-family: Lato;
-                 font-weight: 500;
-                 cursor: pointer;
-
-             }
-         }
-
-         .nxt-button-style:hover {
-             background-color: #e8f0fe;
-             cursor: pointer;
-         }
-
-         .font-style {
-             font-family: 'Lato';
-             font-size: 16px;
-         }
+     .login-btn {
+         border-radius: 25px;
+         padding: 0px 28px 0px 28px;
      }
 
-     .form-field-space {
-         margin-top: 2%;
-     }
-
-     .label {
-         display: inline-block;
-         margin-left: 10px;
-         font-weight: bold;
+     .login-form {
+         width: 35%;
      }
 
      .signup-space {
          margin-top: 2%;
          font-family: Lato;
      }
- }
 
- ::ng-deep .mat-progress-bar-fill::after {
-     background-color: #005e7f;
- }
+     ::ng-deep .mat-progress-bar-fill::after {
+         background-color: #005e7f;
+     }
 
- ::ng-deep .mat-progress-bar-buffer {
-     background: transparent;
- }
+     ::ng-deep .mat-progress-bar-buffer {
+         background: transparent;
+     }
 
- ::ng-deep .mat-progress-bar {
-     border-radius: 2px;
- }
+     ::ng-deep .mat-progress-bar {
+         border-radius: 2px;
+     }
 
- ::ng-deep .mat-progress-bar-background {
-     fill: none;
+     ::ng-deep .mat-progress-bar-background {
+         fill: none;
+     }
  }

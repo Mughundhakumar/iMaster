@@ -30,12 +30,14 @@ import {
   loginFormGroup: FormGroup;
   loginPasswordHide = false;
   isLoading = false;
+  unFocus = false;
+  pwdFocus = false;
 
   constructor(private formBuilder: FormBuilder,
     private router: Router,
   ) {
     this.loginFormGroup = this.formBuilder.group({
-      userName: ['', [Validators.required]],
+      username: ['', [Validators.required]],
       password: ['', [Validators.required]],
     }
 
@@ -44,6 +46,11 @@ import {
 
   ngOnInit(): void { }
 
-  onSubmit() { }
+  onSubmit() {
+    console.log('Form :', this.loginFormGroup);
+    if (this.loginFormGroup.valid) {
+      this.router.navigate(['iMaster/home']);
+    }
+  }
 
 }
